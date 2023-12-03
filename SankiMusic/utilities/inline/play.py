@@ -52,10 +52,6 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 callback_data=f"ADMIN Resume|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="➕",
-                callback_data=f"add_playlist {videoid}",
-            ),
-            InlineKeyboardButton(
                 text="𝐒𝐤𝐢𝐩",
                 callback_data=f"ADMIN Skip|{chat_id}",
             ),
@@ -64,6 +60,16 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 callback_data=f"ADMIN Stop|{chat_id}",
             ),
         ],
+        [
+            InlineKeyboardButton(
+                text="➕ ᴩʟᴀʏʟɪsᴛ ➕",
+                callback_data=f"add_playlist {videoid}",
+            ),
+            InlineKeyboardButton(
+                text="owner",
+                url=f"https://t.me/music_world_sh,
+            )
+       ],
         [
             InlineKeyboardButton(
                 text="✯ ᴄʟᴏsᴇ ✯", callback_data="close"

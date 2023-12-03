@@ -67,7 +67,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
             ),
             InlineKeyboardButton(
                 text="owner",
-                url=f"https://t.me/music_world_sh,
+                url=f"https://t.me/music_world_sh",
             )
        ],
         [
@@ -137,7 +137,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
             ),
             InlineKeyboardButton(
                 text="owner",
-                url=f"https://t.me/music_world_sh,
+                url=f"https://t.me/music_world_sh",
             )
        ],
         [
@@ -176,7 +176,7 @@ def stream_markup(_, videoid, chat_id):
             ),
             InlineKeyboardButton(
                 text="owner",
-                url=f"https://t.me/music_world_sh,
+                url=f"https://t.me/music_world_sh",
             )
        ],
         [
@@ -215,7 +215,7 @@ def telegram_markup(_, videoid, chat_id):
             ),
             InlineKeyboardButton(
                 text="owner",
-                url=f"https://t.me/music_world_sh,
+                url=f"https://t.me/music_world_sh",
             )
        ],
         [
@@ -380,7 +380,7 @@ def queue_markup(_, videoid, chat_id):
             ),
             InlineKeyboardButton(
                 text="owner",
-                url=f"https://t.me/music_world_sh,
+                url=f"https://t.me/music_world_sh",
             )
        ],
         [

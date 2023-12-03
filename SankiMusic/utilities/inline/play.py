@@ -122,10 +122,6 @@ def telegram_markup_timer(_, chat_id, played, dur):
                 callback_data=f"ADMIN Resume|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="➕",
-                callback_data=f"add_playlist {videoid}",
-            ),
-            InlineKeyboardButton(
                 text="𝐒𝐤𝐢𝐩",
                 callback_data=f"ADMIN Skip|{chat_id}",
             ),
@@ -134,6 +130,16 @@ def telegram_markup_timer(_, chat_id, played, dur):
                 callback_data=f"ADMIN Stop|{chat_id}",
             ),
         ],
+        [
+            InlineKeyboardButton(
+                text="➕ ᴩʟᴀʏʟɪsᴛ ➕",
+                callback_data=f"add_playlist {videoid}",
+            ),
+            InlineKeyboardButton(
+                text="owner",
+                url=f"https://t.me/music_world_sh,
+            )
+       ],
         [
             InlineKeyboardButton(
                 text="✯ ᴄʟᴏsᴇ ✯", callback_data="close"
@@ -145,15 +151,6 @@ def telegram_markup_timer(_, chat_id, played, dur):
 
 def stream_markup(_, videoid, chat_id):
     buttons = [
-        [
-            InlineKeyboardButton(
-                text="✭ ᴜᴘᴅᴀᴛᴇs ✭", url=config.SUPPORT_CHANNEL
-            ),
-            InlineKeyboardButton(
-                text="✭ sᴜᴘᴘᴏʀᴛ ✭", url=config.SUPPORT_GROUP
-            )
-        ],
-        [
             InlineKeyboardButton(
                 text="𝐏𝐚𝐮𝐬𝐞",
                 callback_data=f"ADMIN Pause|{chat_id}",
@@ -161,10 +158,6 @@ def stream_markup(_, videoid, chat_id):
             InlineKeyboardButton(
                 text="𝐑𝐞𝐬𝐮𝐦𝐞",
                 callback_data=f"ADMIN Resume|{chat_id}",
-            ),
-            InlineKeyboardButton(
-                text="➕",
-                callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
                 text="𝐒𝐤𝐢𝐩",
@@ -175,6 +168,16 @@ def stream_markup(_, videoid, chat_id):
                 callback_data=f"ADMIN Stop|{chat_id}",
             ),
         ],
+        [
+            InlineKeyboardButton(
+                text="➕ ᴩʟᴀʏʟɪsᴛ ➕",
+                callback_data=f"add_playlist {videoid}",
+            ),
+            InlineKeyboardButton(
+                text="owner",
+                url=f"https://t.me/music_world_sh,
+            )
+       ],
         [
             InlineKeyboardButton(
                 text="✯ ᴄʟᴏsᴇ ✯", callback_data="close"
